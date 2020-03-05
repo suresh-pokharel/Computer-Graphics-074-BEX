@@ -1,0 +1,62 @@
+﻿  fan.cpp
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(12,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(13,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(24,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(25,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(29,36): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(30,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(30,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(31,34): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(32,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(32,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(38,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(40,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(48,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(49,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(50,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(55,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(56,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(60,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(63,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(64,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(64,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(65,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(66,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(66,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(76,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(77,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(78,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(83,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(84,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(88,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(91,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(92,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(92,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(93,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(94,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(94,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(105,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(106,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(107,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(112,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(113,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(117,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(120,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(121,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(121,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(122,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(123,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(123,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(133,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(134,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(135,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(140,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(141,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(145,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(148,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(149,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(149,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(150,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(151,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+E:\3D-Classroom-OpenGL-master\src\fan.cpp(151,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  3D Classroom.vcxproj -> C:\Users\Administrator\Desktop\3D Classroom\Debug\3D Classroom.exe
