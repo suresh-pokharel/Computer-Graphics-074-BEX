@@ -1,0 +1,203 @@
+.toggleBtnFixed{
+    background-color: transparent;
+    font-size: 20px;
+    border: round;
+    border-radius: 5px;
+    border:solid #eee;
+    position:fixed;
+    margin:10px;
+    padding:5px;
+}
+.toggleBtn{
+    background-color: transparent;
+    font-size: 20px;
+    border: solid #eee;
+    border-style: round;
+    border-radius: 5px;
+    margin:2px;
+    padding:2px;
+}
+.input-panel{
+    float: left;
+    border: solid transparent;
+    height: 100%;
+    max-height: 100%;
+    border-style: round;
+    border-radius: 10px;
+    padding: 1% 0.25%;
+    margin: 1% 0.25%;
+    overflow: auto;
+}
+.input-panel-div{
+    background-color: #eee;
+    margin: 1% 1%;
+    padding: 2%;
+    width:90%;
+    border: solid #eee0;
+    border-radius: 10px;
+    float:left;
+    overflow: scroll;
+}
+
+.left-section{
+    float: left;
+    width: 23%;
+    border: solid #eee;
+    border-style: round;
+    border-radius: 10px;
+    margin: 1% 0.25% 1% 0.25%;
+    overflow: auto;
+}
+
+.label-small-left{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 2%;
+    padding: 1%;
+    float: left;
+}
+.label-medium-left{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 1%;
+    padding:1%;
+    float:left;
+}
+.label-small-right{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 1%;
+    padding:1%;
+    float:right;
+}
+
+.rounded-right-button{
+    background-color: #ccc;
+    font-size: 10px;
+    border: solid #ddd;
+    border-style: round;
+    border-radius: 5px;
+    border-width: 1px;
+    float: right;
+    margin:5px;
+    padding:5px;
+}
+.rounded-right-small-button{
+    background-color: #ccc;
+    font-size: 10px;
+    border: solid #ddd;
+    border-style: round;
+    border-radius: 5px;
+    border-width: 2px;
+    float: right;
+    margin:1px 2px;
+    padding:1px 2px;
+}
+
+.rounded-center-button{
+    background-color: #ccc;
+    font-size: 15px;
+    border: solid #ddd;
+    border-style: round;
+    border-radius: 5px;
+    border-width: 1px;
+    align-self: center;
+    margin:5px;
+    padding:5px;
+}
+
+.center{
+    float: center;
+}
+
+.equation-input{
+    border: solid transparent;
+    border-style: round;
+    border-width: 1px;
+    border-radius:  10px;
+    padding:3.5%;
+    width: 90%;
+    margin:1%;
+    font-size: 15px;
+}
+
+.equation-input-error{
+    border: solid transparent;
+    border-style: round;
+    border-radius: 5px;
+    padding:3%;
+    width: 90%;
+    margin:1%;
+    resize: false;
+    overflow: auto;
+    font-size: 20px;
+}
+
+.text-input-small{
+    border: solid transparent;
+    border-style: round;
+    border-radius: 5px;
+    padding:1%;
+    width: 20%;
+    margin:1%;
+    resize: false;
+    overflow: auto;
+    font-size: 10px;
+}
+
+.color-picker{
+    height:20px;
+    width:20px;
+    border: solid transparent;
+    border-style:round;
+    border-radius:10px;
+    padding:0px;
+    float:right;
+}
+
+.slider{
+    width:50%;
+}
+.full-slider{
+    width: 100%;
+    float: center;
+}
+
+.fixed-div-20{
+    position:fixed;
+    max-width: 25%;
+    max-height:70%;
+    top:30%;
+    right:0%;
+    background: #eee;
+    border: solid 2px #eee;
+    padding: 0.5%;
+    border-style: round;
+    border-radius: 20px;
+    overflow: auto;
+}
+.setting-fieldset{
+    border-style:round;
+    border-radius: 20px;
+}
+.setting-fieldset legend{
+    font-size: 10px;
+}
+
+.input-file{
+    display:hidden;
+    width:0.1px;
+    height:0.1px;
+}
+.custom-input-label{
+    font-size:15px;
+    background-color: #ccc;
+    border: solid;
+    border-color:#eee;
+    border-radius:10px;
+    display:inline-block;
+    cursor: pointer;
+    padding:10px;
+    width:80%;
+    overflow: hidden;
+}
