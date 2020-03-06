@@ -1,0 +1,110 @@
+//Trigonometric
+sin
+asin
+cos
+acos
+tan
+atan
+cot
+acot
+cosec
+acosec
+sec
+asec
+
+//Logarithmic
+ln
+log
+
+//Exponential
+e
+exp
+
+
+//Normal
+sqrt
+
+num_regex = /[0-9]+\.?[0-9]*e?[0-9]*/ig;
+func_regex = /[a-z]*\({1}[^]*\){1}/gi
+
+//console.log('a(b())'.match(func_regex));
+
+function genSymbolList(expression){
+    //Remove all the spaces
+    expression = expression.replace(/\s\S/ig,'');
+    console.log(expression);
+
+    //Extract all numbers and make list of it
+    let numList = (expression.match(num_regex)).map((val) => parseFloat(val));
+    console.log(numList);
+
+    //Replace the numbers with 0
+    expression = expression.replace(num_regex,0);
+    console.log(expression);
+
+    let prev_alpha = false;
+    let return_list = [];
+    let char ='';
+    let func_str = '';
+    
+    for(let i=0;i<expression.length;i++){
+        char = expression[i];
+        if(char==='0')
+            return_list.push(numList.shift());
+        else if(prev_alpha){
+            func_str += char;
+            if(expression[i+1]<'a'&&expression>'z'){
+                return_list.push(func_str);
+            }
+        }else if(char>='a'&&char<='z'){
+            if(expression[i+1]<'a'&&expression>'z')
+                return_list.push(char);
+            else{
+                prev_alpha = true;
+                func_str = char;
+            }
+        }
+    }
+}
+
+f_map = {
+    'sin': {f:Math.sin, type:'u'},
+}
+
+function calculate(){
+    
+}
+
+let a = expression.match(/=/gi);
+    let isExplicit = false;
+
+    if(a.length>1)
+        return null;
+
+    if(a===null){
+        expression += '=' + is3D?'z':'y';
+    }
+    
+    if(is3D){
+        if(expression.search(/=z/ig)||expression.search(/z=/ig)){
+            let matches = expression.match(/z/ig);
+            if(matches.length===1)
+                isExplicit = true;
+        }
+    }else{
+        if(expression.search(/=y/ig)||expression.search(/y=/ig)){
+            let matches = expression.match(/y/ig);
+            if(matches.length===1)
+                isExplicit = true;
+        }
+    }
+
+    a = expression.search('=');
+    if(isExplicit){
+        if(expression[a+1]==='z'||expression[a+1]==='y'){
+            expression = expression.substr(0,a); 
+        }else{
+            expression = expression.substr(a+1,expression.length);
+        }
+    }else
+        expression = expression.substr(0,a) + '-(' + expression.substr(a+1,expression.length)+')';

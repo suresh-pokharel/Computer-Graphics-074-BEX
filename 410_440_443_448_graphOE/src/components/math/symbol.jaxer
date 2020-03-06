@@ -1,0 +1,238 @@
+// let math = require('./math');
+// //Brackets people
+// class Symbol{
+    
+//     constructor(expression){
+
+//         //We will impose precendence as well
+//         expression = this.killSpace(expression);
+
+//         this.list =  [];
+//         this.leftList = [];
+//         this.rightList = [];
+//         this.sliderSuggest = [];
+//         this.x =[];
+//         this.y = [];
+//         this.index = 0;
+
+        
+//         let leftExp = '';
+//         let rightExp = '';
+//         this.expression = '';
+        
+//         //Differentiate left and right expressions:
+//         while(this.index<expression.length&&expression[this.index]!=='='){
+//             leftExp += expression[this.index];
+//             this.index++;
+//         }
+
+//         if(expression[this.index]==='='){
+//             this.index++;
+//             rightExp = expression.substr(this.index, expression.length-1); 
+//         }
+
+//         this.index = 0;
+//         this.expression = leftExp;
+//         this.parse(0);
+//         this.leftList = Array.from(this.list);
+        
+//         this.list = [];
+//         this.index = 0;
+//         this.expression = rightExp;
+//         this.parse(0);
+//         this.rightList = Array.from(this.list);
+//     }
+
+//     parse(start){
+        
+//         while(this.index<this.expression.length){
+//             let s = this.expression[this.index];
+//             if(s==='+'||s==='-'||s==='*'||s==='/'||s==='^'){
+//                 this.list.splice(start,0,s);
+//                 this.index++;
+//             }else if(s==='('){
+//                 this.index++;
+//                 this.parse(this.list.length);
+//             }else if(s===')'){
+//                 this.index++;
+//                 return;
+//             }else{
+//                 if((s!=='x'&&s!=='y'&&(s<'0'|| s>'9'))){
+//                     this.sliderSuggest.push(s);
+//                 }else if(s>='0'&&s<='9'){
+//                     s = this.extractNumber();
+//                 }
+//                 this.list.push(s);
+//                 this.index++;
+//             }
+//             console.log(`${this.list} => ${start}`);
+            
+//         }
+//     }
+
+//     simplify()
+
+//     enforce_precendence(){
+
+//     }
+
+//     killSpace(expression){
+//         let r_str = '';
+//         for(let char of expression){
+//             if(char===' '||char==='/t'||char==='\n');
+//             else
+//                 r_str += char;
+//         }
+//         return r_str;
+//     }
+
+//     extractNumber(){
+//         let num_str = '';
+//         let s = this.expression[this.index];  
+//         while(this.index<this.expression.length
+//                 &&((s>='0'&&s<='9')||s=='e'||s=='.'))
+//         {
+//             num_str += s;   
+//             this.index++;
+             
+//             s = this.expression[this.index];
+//         }
+//         this.index--;
+//         return parseFloat(num_str);
+//     }
+    
+//     replaceSuggestion(r){
+//         let  i=0;
+//         for(let obj of r){
+//             let s = this.sliderSuggest[i];
+//             this.leftList = this.replace(s,obj,this.leftList);
+//             this.rightList = this.replace(s,obj,this.rightList);
+//             i++;
+//         }
+//     }
+
+//     replace(prev,ne,lst){
+//         return lst.map((value)=>{
+//             if(prev===value){
+//                 return ne;
+//             }
+//             else 
+//                 return value; 
+//         });
+//     }
+
+//     replaceRealWithComplex(){
+//         this.leftList = this.leftList.map((value)=>{
+//             if(typeof(value)=='number'){
+//                 return new math.Complex(value,0);
+//             }
+//             return value;
+//         });
+//         this.rightList = this.rightList.map((value)=>{
+//             if(typeof(value)=='number'){
+//                 return new math.Complex(value,0);
+//             }
+//             return value;
+//         });
+//     }
+
+//     getPointList2D=(left, right, step = 0.1, threshold = 0.00001)=>{
+//         this.replaceRealWithComplex();
+//         //console.log(this.leftList);
+        
+//         if(left>right)
+//             return null;
+//             var c,fa,fb;
+//         while(left.x<=right.x){
+//             let clx = this.replace('x',left,this.leftList);
+//             let crx = this.replace('x',left,this.rightList);
+        
+            
+//             var a = new math.Complex(1,-1), b = new math.Complex(1,1);
+//             while(a.sub(b).mag()>threshold){
+//                 fa = this.f2d(clx,crx,a);
+//                 fb = this.f2d(clx,crx,b);
+
+
+//                 c = (a.mul(fb)).sub(b.mul(fa));
+//                 c = c.div(fb.sub(fa));
+//                 console.log(`${left.x.toFixed(3)}: (${a.x.toFixed(3)}, ${a.y.toFixed(3)})\t(${b.x.toFixed(3)}, ${b.y.toFixed(3)})\t(${c.x.toFixed(3)}, ${c.y.toFixed(3)})\t(${fa.x.toFixed(3)}, ${fa.y.toFixed(3)})\t(${fb.x.toFixed(3)}, ${fb.y.toFixed(3)})\t`)
+//                 a = b;
+//                 b = c;
+//             }
+//             console.log(`Solved (${left.x.toFixed(3)}, ${a.x.toFixed(3)})`);
+//             left.x += step;
+//         }
+//     }
+
+//     f2d(l,r,val){
+//         let lt = this.replace('y',val,l);
+//         let rt = this.replace('y',val,r);
+//         return (this.get(lt)).sub(this.get(rt));
+//     }
+
+//     get(l){
+//         if(l.length==1){
+//             if(typeof(l[0])!='string')
+//                 return l[0];
+//             return null;
+//         }else if(l.length==0){
+//             return new math.Complex();
+//         }
+        
+//         let st = [];
+//         let or = Array.from(l);
+
+//         st.unshift(or.shift());
+//         st.unshift(or.shift());
+//         while(true){
+            
+//             let right = st[0];
+//             let left = st[1];
+            
+//             if(typeof(left)=='object'&&typeof(right)=='object'){
+//                 st.shift();
+//                 st.shift();
+//                 let sign = st.shift();
+//                 let new_val;
+//                 switch(sign){
+//                 case '*':
+//                     new_val = left.mul(right);
+//                 break;
+//                 case '+':
+//                     new_val = left.add(right);
+//                 break;
+//                 case '-':
+//                     new_val = left.sub(right);
+//                 break;
+//                 case '^':
+//                     new_val = left.pow(right);
+//                 break;
+//                 default:
+//                     return null;
+//                 }
+//                 //console.log(new_val);
+//                 //console.log(`left ${left.x.toFixed(3)},${left.y.toFixed(3)} ${sign} right ${right.x.toFixed(3)},${right.y.toFixed(3)} = ${new_val.x.toFixed(3)},${new_val.y.toFixed(3)}`);
+//                 st.unshift(new_val);
+//             }
+
+//             if(or.length>0)
+//                 st.unshift(or.shift());
+            
+//             if(st.length<=1)
+//                 break;
+//         }
+//         //console.log("---------------------------------------------");
+//         return st[0];
+//     }
+// }
+
+// a = new Symbol('(x^2)+(y^2)=10');
+
+// a.getPointList2D(new math.Complex(-5),new math.Complex(5));
+
+// console.log(a.leftList);
+// console.log(a.rightList);
+// //console.log(a.sliderSuggest);
+
+
