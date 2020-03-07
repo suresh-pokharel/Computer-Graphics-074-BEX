@@ -1,0 +1,57 @@
+# Blender MTL File: 'finaltest.blend'
+# Material Count: 5
+
+newmtl Balcony
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.008383 0.008383 0.008383
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:\\Users\\Dell\\Desktop\\G pro\\New folder\\Metal.png
+
+newmtl Fence
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.016058 0.827562 0.394575
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Dell\\Desktop\\G pro\\New folder\\Wood.png
+
+newmtl Floor
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Dell\\Desktop\\G pro\\New folder\\Floor.png
+
+newmtl NewDharara
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800659 0.800659 0.800659
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Dell\\Desktop\\G pro\\New folder\\New darahara.jpg
+
+newmtl OldDharara
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.438546 0.438546 0.438546
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Dell\\Desktop\\G pro\\New folder\\Olddarahara.png
